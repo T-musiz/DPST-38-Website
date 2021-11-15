@@ -31,17 +31,6 @@
   <main class="container-sm m-auto">
     <h1 class="ms-lg-5">สมาชิกห้อง</h1>
     <section id="ClassMember-container";class="container">
-      <div  class="row p-3 my-3 member-elm">
-        <div class="col-sm ms-md ">
-          <img class="member-img" src="./img/01-Pat.jpeg">
-        </div>
-        <div class="col-sm m-auto" style="padding: 25px;" >
-          <h4>Patra Ountaphan</h4>
-          <p><b>No.</b> 1    <b>Student ID:</b> 47658<br>
-            <b>Instargram:</b> ajhdshse <br>
-            <b>Phone:</b> 90809170909</p>
-        </div>
-      </div>
     </section>
     <!--section>
       <h1 class="ms-lg-5">คู่รักทางไกล</h1>
@@ -78,7 +67,7 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
     const db = firebase.firestore()
-    const storage = firebase.storage();
+    //var storage = firebase.storage();
     var storageRef = storage.ref();
   </script>
   <script type='text/javascript' src='Blackground.js'></script>

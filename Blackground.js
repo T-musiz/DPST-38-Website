@@ -14,8 +14,12 @@ function createElement(name,id,nO,iG,Phone){
   </div>`;
   container.appendChild(newNode);
 };
-function ClassroomCheck(){
-    db.collection("Member").get().then(function(doc){
+function GetData(){
+    db.collection("Member").doc('47658').get().then(function(doc){
         let Data = doc.data();
+        createElement(Data.EngName,Data.ID,Data.No,Data.Instagram,Data.PhoneNo)
         console.log(Data)
     })}
+GetData()
+NoMember= db.collection("Member").get().then(doc => doc.size)
+console.log(NoMember)
